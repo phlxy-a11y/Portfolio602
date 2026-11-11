@@ -1,0 +1,313 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-body: #f8fafc;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    
+    /* Theme Kweisra (Blue) */
+    --kweisra-primary: #1e3a8a;
+    --kweisra-secondary: #3b82f6;
+    --kweisra-light: #eff6ff;
+    
+    /* Theme Nantita (Teal) */
+    --nantita-primary: #0f766e;
+    --nantita-secondary: #14b8a6;
+    --nantita-light: #f0fdfa;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Header & Navbar */
+.navbar {
+    background-color: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nav-brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.nav-btn-kweisra {
+    background-color: var(--kweisra-secondary);
+}
+
+.nav-btn-kweisra:hover {
+    background-color: #2563eb;
+}
+
+.nav-btn-nantita {
+    background-color: var(--nantita-secondary);
+}
+
+.nav-btn-nantita:hover {
+    background-color: #0d9488;
+}
+
+/* Main Layout */
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* Portfolio Card */
+.portfolio-card {
+    background: #ffffff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+/* Card Header Themes */
+.card-header-kweisra {
+    background: linear-gradient(135deg, #1e3a8a, #312e81);
+    color: #ffffff;
+    padding: 2rem;
+}
+
+.card-header-nantita {
+    background: linear-gradient(135deg, #0f766e, #115e59);
+    color: #ffffff;
+    padding: 2rem;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.tag-kweisra {
+    background-color: #3b82f6;
+    color: #ffffff;
+}
+
+.tag-nantita {
+    background-color: #14b8a6;
+    color: #ffffff;
+}
+
+.student-name {
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+.school-name {
+    color: #e2e8f0;
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
+}
+
+.contact-box {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 1rem 1.25rem;
+    border-radius: 0.75rem;
+    font-size: 0.875rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.contact-box p {
+    margin-bottom: 0.25rem;
+}
+
+.contact-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Card Body Content */
+.card-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Info Grid System */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.info-block {
+    background-color: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e2e8f0;
+}
+
+.info-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+}
+
+.info-title-kweisra {
+    color: var(--kweisra-primary);
+    border-bottom: 2px solid var(--kweisra-secondary);
+}
+
+.info-title-nantita {
+    color: var(--nantita-primary);
+    border-bottom: 2px solid var(--nantita-secondary);
+}
+
+.info-list {
+    list-style-type: none;
+    font-size: 0.925rem;
+}
+
+.info-list li {
+    margin-bottom: 0.5rem;
+}
+
+.info-list-bullets {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+}
+
+/* SOP Box */
+.sop-box-kweisra {
+    background-color: var(--kweisra-light);
+    border-left: 4px solid var(--kweisra-secondary);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.sop-box-nantita {
+    background-color: var(--nantita-light);
+    border-left: 4px solid var(--nantita-secondary);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.sop-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.sop-title-kweisra { color: var(--kweisra-primary); }
+.sop-title-nantita { color: var(--nantita-primary); }
+
+.sop-desc {
+    font-size: 0.925rem;
+    color: #334155;
+}
+
+/* Image Gallery Grid */
+.gallery-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-card {
+    background: #ffffff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #cbd5e1;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-caption {
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #475569;
+    background: #ffffff;
+    border-top: 1px solid #f1f5f9;
+}
+
+/* Footer */
+.footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.875rem;
+    margin-top: 3rem;
+    border-top: 1px solid #334155;
+}
